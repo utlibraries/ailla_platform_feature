@@ -177,6 +177,39 @@ function ailla_platform_feature_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['system-user-menu'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'user-menu',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'ailla' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'ailla',
+        'weight' => -28,
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'User Menu',
+    'visibility' => 0,
+  );
+
   $export['user-login'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -208,6 +241,39 @@ function ailla_platform_feature_default_fe_block_settings() {
     ),
     'title' => 'User Login',
     'visibility' => 0,
+  );
+
+  $export['views-frontpage_node_view-block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'frontpage_node_view-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'ailla' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'ailla',
+        'weight' => -30,
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
   );
 
   $export['views-node_content_slideshow-block'] = array(
