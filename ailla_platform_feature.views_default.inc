@@ -116,6 +116,7 @@ function ailla_platform_feature_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Slideshow Image */
   $handler->display->display_options['fields']['field_slideshow_image']['id'] = 'field_slideshow_image';
@@ -152,6 +153,7 @@ function ailla_platform_feature_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';

@@ -14,8 +14,15 @@ function ailla_platform_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_jquery_version';
-  $strongarm->value = '1.8';
+  $strongarm->value = '1.7';
   $export['jquery_update_jquery_version'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_existing';
+  $strongarm->value = 'skip';
+  $export['node_export_existing'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -357,7 +364,7 @@ function ailla_platform_feature_strongarm() {
     'google_plus_url' => 'https://plus.google.com/u/0/109064032428497406718',
     'pinterest_url' => 'http://pinterest.com',
     'slideshow_bg_datastream' => 'OBJ',
-    'jquery_update_jquery_version' => '1.8',
+    'jquery_update_jquery_version' => '1.7',
     'nice_menus_custom_css' => '',
   );
   $export['theme_ailla_settings'] = $strongarm;
