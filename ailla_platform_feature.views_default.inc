@@ -129,11 +129,10 @@ function ailla_platform_feature_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Body (body:format) */
+  $handler->display->display_options['sorts']['body_format']['id'] = 'body_format';
+  $handler->display->display_options['sorts']['body_format']['table'] = 'field_data_body';
+  $handler->display->display_options['sorts']['body_format']['field'] = 'body_format';
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
