@@ -830,27 +830,9 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
-  // Exported menu link: user-menu_log-in:user/login
-  $menu_links['user-menu_log-in:user/login'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'user/login',
-    'router_path' => 'user/login',
-    'link_title' => 'Log in',
-    'options' => array(
-      'identifier' => 'user-menu_log-in:user/login',
-    ),
-    'module' => 'system',
-    'hidden' => -1,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-    'parent_identifier' => 'user-menu_my-account:user',
-  );
-  // Exported menu link: user-menu_log-out:user/logout
-  $menu_links['user-menu_log-out:user/logout'] = array(
-    'menu_name' => 'user-menu',
+  // Exported menu link: menu-user_log-out:user/logout
+  $menu_links['menu-user_log-out:user/logout'] = array(
+    'menu_name' => 'menu-user',
     'link_path' => 'user/logout',
     'router_path' => 'user/logout',
     'link_title' => 'Log Out',
@@ -858,30 +840,29 @@ function ailla_platform_feature_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'user-menu_log-out:user/logout',
+      'identifier' => 'menu-user_log-out:user/logout',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: user-menu_my-account:user
-  $menu_links['user-menu_my-account:user'] = array(
-    'menu_name' => 'user-menu',
+  // Exported menu link: menu-user_my-account:user
+  $menu_links['menu-user_my-account:user'] = array(
+    'menu_name' => 'menu-user',
     'link_path' => 'user',
     'router_path' => 'user',
     'link_title' => 'My Account',
     'options' => array(
-      'alter' => TRUE,
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'user-menu_my-account:user',
+      'identifier' => 'menu-user_my-account:user',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -889,9 +870,9 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: user-menu_my-bookmarks:islandora-bookmark
-  $menu_links['user-menu_my-bookmarks:islandora-bookmark'] = array(
-    'menu_name' => 'user-menu',
+  // Exported menu link: menu-user_my-bookmarks:islandora-bookmark
+  $menu_links['menu-user_my-bookmarks:islandora-bookmark'] = array(
+    'menu_name' => 'menu-user',
     'link_path' => 'islandora-bookmark',
     'router_path' => 'islandora-bookmark',
     'link_title' => 'My Bookmarks',
@@ -899,7 +880,7 @@ function ailla_platform_feature_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'user-menu_my-bookmarks:islandora-bookmark',
+      'identifier' => 'menu-user_my-bookmarks:islandora-bookmark',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -909,6 +890,7 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('AILLA papers');
@@ -940,7 +922,6 @@ function ailla_platform_feature_menu_default_menu_links() {
   t('Languages');
   t('License');
   t('Log Out');
-  t('Log in');
   t('Metadata');
   t('Mission');
   t('My Account');
@@ -953,7 +934,6 @@ function ailla_platform_feature_menu_default_menu_links() {
   t('Use');
   t('View');
   t('Welcome');
-
 
   return $menu_links;
 }
