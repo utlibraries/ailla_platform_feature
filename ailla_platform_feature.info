@@ -123,5 +123,3 @@ features[variable][] = theme_default
 features[views_view][] = frontpage_node_view
 features[views_view][] = node_content_slideshow
 features_exclude[node][page] = page
-features_exclude[field_base][body] = body
-features_exclude[field_instance][node-page-body] = node-page-body
