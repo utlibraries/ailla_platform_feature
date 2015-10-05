@@ -122,4 +122,5 @@ features[variable][] = theme_ailla_settings
 features[variable][] = theme_default
 features[views_view][] = frontpage_node_view
 features[views_view][] = node_content_slideshow
+features[views_view][] = resource_media_files
 features_exclude[node][page] = page
