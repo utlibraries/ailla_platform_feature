@@ -151,7 +151,6 @@ function ailla_platform_feature_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'owlcarousel';
-  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -176,6 +175,112 @@ function ailla_platform_feature_views_default_views() {
     t('Block'),
   );
   $export['node_content_slideshow'] = $view;
+
+  $view = new view();
+  $view->name = 'resource_media_files';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'islandora_solr';
+  $view->human_name = 'Resource Media Files';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Resource Media Files';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'fgs_label_s' => 'fgs_label_s',
+    'mods_genre_lang_eng_authority_aillamediagenres_s' => 'mods_genre_lang_eng_authority_aillamediagenres_s',
+    'mods_language_languageTerm_text_valueURI_ms' => 'mods_language_languageTerm_text_valueURI_ms',
+  );
+  $handler->display->display_options['style_options']['default'] = 'fgs_label_s';
+  $handler->display->display_options['style_options']['info'] = array(
+    'fgs_label_s' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'mods_genre_lang_eng_authority_aillamediagenres_s' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'mods_language_languageTerm_text_valueURI_ms' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+  );
+  /* Field: Islandora Solr: fgs_label_s */
+  $handler->display->display_options['fields']['fgs_label_s']['id'] = 'fgs_label_s';
+  $handler->display->display_options['fields']['fgs_label_s']['table'] = 'islandora_solr';
+  $handler->display->display_options['fields']['fgs_label_s']['field'] = 'fgs_label_s';
+  $handler->display->display_options['fields']['fgs_label_s']['label'] = 'Object';
+  $handler->display->display_options['fields']['fgs_label_s']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['fgs_label_s']['link_to_object'] = 1;
+  /* Field: Islandora Solr: mods_genre_lang_eng_authority_aillamediagenres_s */
+  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['id'] = 'mods_genre_lang_eng_authority_aillamediagenres_s';
+  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['table'] = 'islandora_solr';
+  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['field'] = 'mods_genre_lang_eng_authority_aillamediagenres_s';
+  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['label'] = 'Genre';
+  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['link_to_object'] = 0;
+  /* Contextual filter: Islandora Solr: RELS_EXT_isMemberOfCollection_uri_s */
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['id'] = 'RELS_EXT_isMemberOfCollection_uri_s';
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['table'] = 'islandora_solr';
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['field'] = 'RELS_EXT_isMemberOfCollection_uri_s';
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['default_argument_type'] = 'php';
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['default_argument_options']['code'] = '$object = menu_get_object(\'islandora_object\', 2);
+if (is_object($object) && in_array(\'ailla:resourceCModel\', $object->models)) {
+  return \'info:fedora/\' . $object->id;
+}';
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['summary_options']['items_per_page'] = '25';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $handler->display->display_options['block_description'] = 'Media Files';
+  $translatables['resource_media_files'] = array(
+    t('Master'),
+    t('Resource Media Files'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Object'),
+    t('Genre'),
+    t('All'),
+    t('Block'),
+    t('Media Files'),
+  );
+  $export['resource_media_files'] = $view;
 
   return $export;
 }
