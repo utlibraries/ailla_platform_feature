@@ -34,8 +34,8 @@ function ailla_platform_feature_islandora_solr_metadata_configurations_default_f
  return array(
   'ailla_collection' => array(
     'fields' => array(
-      'mods_titleInfo_alternative_lang_english_title_s' => array(
-        'solr_field' => 'mods_titleInfo_alternative_lang_english_title_s',
+      'mods_titleInfo_alternative_title_s' => array(
+        'solr_field' => 'mods_titleInfo_alternative_title_s',
         'data' => 'a:3:{s:13:"display_label";s:16:"Indigenous Title";s:9:"hyperlink";i:0;s:10:"truncation";a:5:{s:15:"truncation_type";s:21:"separate_value_option";s:10:"max_length";s:1:"0";s:9:"word_safe";i:0;s:8:"ellipsis";i:0;s:19:"min_wordsafe_length";s:1:"1";}}',
         'weight' => 2,
         'display_label' => 'Indigenous Title',
@@ -95,20 +95,6 @@ function ailla_platform_feature_islandora_solr_metadata_configurations_default_f
         'data' => 'a:3:{s:13:"display_label";s:21:"Description [Spanish]";s:9:"hyperlink";i:0;s:10:"truncation";a:5:{s:15:"truncation_type";s:21:"separate_value_option";s:10:"max_length";s:1:"0";s:9:"word_safe";i:0;s:8:"ellipsis";i:0;s:19:"min_wordsafe_length";s:1:"1";}}',
         'weight' => 6,
         'display_label' => 'Description [Spanish]',
-        'hyperlink' => 0,
-        'truncation' => array(
-          'truncation_type' => 'separate_value_option',
-          'max_length' => 0,
-          'word_safe' => 0,
-          'ellipsis' => 0,
-          'min_wordsafe_length' => 1,
-        ),
-      ),
-      'mods_abstract_lang_english_s' => array(
-        'solr_field' => 'mods_abstract_lang_english_s',
-        'data' => 'a:3:{s:13:"display_label";s:24:"Description [Indigenous]";s:9:"hyperlink";i:0;s:10:"truncation";a:5:{s:15:"truncation_type";s:21:"separate_value_option";s:10:"max_length";s:1:"0";s:9:"word_safe";i:0;s:8:"ellipsis";i:0;s:19:"min_wordsafe_length";s:1:"1";}}',
-        'weight' => 7,
-        'display_label' => 'Description [Indigenous]',
         'hyperlink' => 0,
         'truncation' => array(
           'truncation_type' => 'separate_value_option',
