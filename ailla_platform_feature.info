@@ -78,6 +78,7 @@ features[menu_links][] = menu-browse_languages:uuid/node/65a75655-f56c-4e73-a8c7
 features[menu_links][] = menu-user_log-out:user/logout
 features[menu_links][] = menu-user_my-account:user
 features[menu_links][] = menu-user_my-bookmarks:islandora-bookmark
+features[user_permission][] = search islandora solr
 features[user_permission][] = view fedora repository objects
 features[variable][] = islandora_basic_collection_display_backend
 features[variable][] = islandora_collection_metadata_display

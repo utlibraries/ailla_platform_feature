@@ -21,5 +21,16 @@ function ailla_platform_feature_user_default_permissions() {
     'module' => 'islandora',
   );
 
+  // Exported permission: 'search islandora solr'.
+  $permissions['search islandora solr'] = array(
+    'name' => 'search islandora solr',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'islandora_solr',
+  );
+
   return $permissions;
 }
