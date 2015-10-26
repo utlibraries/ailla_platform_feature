@@ -325,7 +325,7 @@ function ailla_platform_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_transition_style_owlcarousel_settings_default';
-  $strongarm->value = '';
+  $strongarm->value = 'fade';
   $export['owlcarousel_transition_style_owlcarousel_settings_default'] = $strongarm;
 
   $strongarm = new stdClass();
