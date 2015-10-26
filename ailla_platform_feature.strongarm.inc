@@ -20,6 +20,13 @@ function ailla_platform_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'islandora_basic_collection_page_size';
+  $strongarm->value = '48';
+  $export['islandora_basic_collection_page_size'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'islandora_collection_metadata_display';
   $strongarm->value = 1;
   $export['islandora_collection_metadata_display'] = $strongarm;
