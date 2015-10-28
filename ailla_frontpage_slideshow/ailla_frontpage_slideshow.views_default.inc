@@ -11,19 +11,18 @@ function ailla_frontpage_slideshow_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'node_content_slideshow';
+  $view->name = 'flexslider_node_content_slideshow';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Node Content Slideshow';
+  $view->human_name = 'Flexslider Node Content Slideshow';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Node Content Slideshow';
-  $handler->display->display_options['css_class'] = 'owl-front-page';
+  $handler->display->display_options['title'] = '<none>';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -31,7 +30,7 @@ function ailla_frontpage_slideshow_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Slideshow Image */
   $handler->display->display_options['fields']['field_slideshow_image']['id'] = 'field_slideshow_image';
@@ -66,14 +65,14 @@ function ailla_frontpage_slideshow_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $translatables['node_content_slideshow'] = array(
+  $translatables['flexslider_node_content_slideshow'] = array(
     t('Master'),
-    t('Node Content Slideshow'),
+    t('<none>'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -90,7 +89,7 @@ function ailla_frontpage_slideshow_views_default_views() {
     t('Page'),
     t('Block'),
   );
-  $export['node_content_slideshow'] = $view;
+  $export['flexslider_node_content_slideshow'] = $view;
 
   return $export;
 }
