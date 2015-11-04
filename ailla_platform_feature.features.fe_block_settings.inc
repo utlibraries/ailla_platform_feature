@@ -26,7 +26,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -27,
+        'weight' => -31,
       ),
       'bartik' => array(
         'region' => '',
@@ -125,7 +125,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -26,
+        'weight' => -33,
       ),
       'bartik' => array(
         'region' => '',
@@ -257,7 +257,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -28,
+        'weight' => -32,
       ),
       'bartik' => array(
         'region' => 'sidebar_first',
@@ -290,7 +290,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -28,
+        'weight' => -29,
       ),
       'bartik' => array(
         'region' => '',
@@ -323,7 +323,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -29,
+        'weight' => -30,
       ),
       'bartik' => array(
         'region' => '',
