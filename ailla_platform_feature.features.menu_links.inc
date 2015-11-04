@@ -90,7 +90,7 @@ function ailla_platform_feature_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_rights:node/41',
+    'parent_identifier' => 'main-menu_rights:uuid/node/049ee451-60ef-4c79-8d37-4462a9fb3dd1',
   );
   // Exported menu link: main-menu_collection:islandora.
   $menu_links['main-menu_collection:islandora'] = array(
@@ -153,7 +153,7 @@ function ailla_platform_feature_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_rights:node/41',
+    'parent_identifier' => 'main-menu_rights:uuid/node/049ee451-60ef-4c79-8d37-4462a9fb3dd1',
   );
   // Exported menu link: main-menu_contact:uuid/node/666a2f2f-9f3a-475f-a2a8-4bed64b87350.
   $menu_links['main-menu_contact:uuid/node/666a2f2f-9f3a-475f-a2a8-4bed64b87350'] = array(
@@ -298,7 +298,7 @@ function ailla_platform_feature_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_rights:node/41',
+    'parent_identifier' => 'main-menu_rights:uuid/node/049ee451-60ef-4c79-8d37-4462a9fb3dd1',
   );
   // Exported menu link: main-menu_download:uuid/node/22f5eb7f-66ec-40c9-b190-c477fd748210.
   $menu_links['main-menu_download:uuid/node/22f5eb7f-66ec-40c9-b190-c477fd748210'] = array(
@@ -465,26 +465,6 @@ function ailla_platform_feature_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_browse:islandora',
   );
-  // Exported menu link: main-menu_languages:node/42.
-  $menu_links['main-menu_languages:node/42'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/42',
-    'router_path' => 'node/%',
-    'link_title' => 'Languages',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_languages:node/42',
-    ),
-    'module' => 'menu',
-    'hidden' => 1,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 1,
-    'weight' => -45,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_lg-code:uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879.
   $menu_links['main-menu_lg-code:uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879'] = array(
     'menu_name' => 'main-menu',
@@ -525,7 +505,7 @@ function ailla_platform_feature_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_rights:node/41',
+    'parent_identifier' => 'main-menu_rights:uuid/node/049ee451-60ef-4c79-8d37-4462a9fb3dd1',
   );
   // Exported menu link: main-menu_links:<front>.
   $menu_links['main-menu_links:<front>'] = array(
@@ -608,7 +588,7 @@ function ailla_platform_feature_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_languages:node/42',
+    'parent_identifier' => 'main-menu_languages:uuid/node/a33759a8-7b02-4458-ba01-261e7d773956',
   );
   // Exported menu link: main-menu_people:uuid/node/9adf83df-b9ab-4a92-b950-2f0ea669abc3.
   $menu_links['main-menu_people:uuid/node/9adf83df-b9ab-4a92-b950-2f0ea669abc3'] = array(
@@ -650,7 +630,7 @@ function ailla_platform_feature_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_languages:node/42',
+    'parent_identifier' => 'main-menu_languages:uuid/node/a33759a8-7b02-4458-ba01-261e7d773956',
   );
   // Exported menu link: main-menu_registration:uuid/node/fc1f5edc-6a6a-44f2-b4cb-196856864e4a.
   $menu_links['main-menu_registration:uuid/node/fc1f5edc-6a6a-44f2-b4cb-196856864e4a'] = array(
@@ -672,26 +652,6 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
     'parent_identifier' => 'main-menu_how-to-use:uuid/node/102059cd-5636-41c3-b156-0bb7e0defe8b',
-  );
-  // Exported menu link: main-menu_rights:node/41.
-  $menu_links['main-menu_rights:node/41'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/41',
-    'router_path' => 'node/%',
-    'link_title' => 'Rights',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_rights:node/41',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 1,
-    'weight' => -46,
-    'customized' => 1,
   );
   // Exported menu link: main-menu_search:uuid/node/ba3a7420-a64a-49a5-ab19-e2d3af66be4a.
   $menu_links['main-menu_search:uuid/node/ba3a7420-a64a-49a5-ab19-e2d3af66be4a'] = array(
@@ -997,7 +957,6 @@ function ailla_platform_feature_menu_default_menu_links() {
   t('People');
   t('References');
   t('Registration');
-  t('Rights');
   t('Search');
   t('Use');
   t('View');
