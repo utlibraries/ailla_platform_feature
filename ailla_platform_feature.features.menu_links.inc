@@ -444,6 +444,27 @@ function ailla_platform_feature_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_browse:islandora',
   );
+  // Exported menu link: main-menu_langauge-code:uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879.
+  $menu_links['main-menu_langauge-code:uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879',
+    'router_path' => 'uuid',
+    'link_title' => 'Langauge Code',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_langauge-code:uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_browse:islandora',
+  );
   // Exported menu link: main-menu_language:uuid/node/a4d5663c-7c10-4f06-9e91-9f027c0c84a1.
   $menu_links['main-menu_language:uuid/node/a4d5663c-7c10-4f06-9e91-9f027c0c84a1'] = array(
     'menu_name' => 'main-menu',
@@ -484,27 +505,6 @@ function ailla_platform_feature_menu_default_menu_links() {
     'expanded' => 1,
     'weight' => -45,
     'customized' => 1,
-  );
-  // Exported menu link: main-menu_lg-code:uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879.
-  $menu_links['main-menu_lg-code:uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879',
-    'router_path' => 'uuid',
-    'link_title' => 'LG Code',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_lg-code:uuid/node/a872de60-bc55-4e9e-b5cd-4739afdc1879',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_browse:islandora',
   );
   // Exported menu link: main-menu_license:uuid/node/d9569c7c-d266-447d-b91b-081f0651254b.
   $menu_links['main-menu_license:uuid/node/d9569c7c-d266-447d-b91b-081f0651254b'] = array(
@@ -982,7 +982,7 @@ function ailla_platform_feature_menu_default_menu_links() {
   t('History');
   t('How to Use');
   t('Keyword Search');
-  t('LG Code');
+  t('Langauge Code');
   t('Language');
   t('Language Codes');
   t('Languages');
