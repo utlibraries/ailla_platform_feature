@@ -125,7 +125,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -33,
+        'weight' => -32,
       ),
       'bartik' => array(
         'region' => '',
@@ -257,7 +257,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -32,
+        'weight' => -33,
       ),
       'bartik' => array(
         'region' => 'sidebar_first',
