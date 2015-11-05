@@ -42,6 +42,7 @@ features[menu_links][] = main-menu_collection:islandora
 features[menu_links][] = main-menu_collections:islandora
 features[menu_links][] = main-menu_conditions:uuid/node/c9b6d615-b8c0-4c7f-ad7b-1112699ed153
 features[menu_links][] = main-menu_contact:uuid/node/666a2f2f-9f3a-475f-a2a8-4bed64b87350
+features[menu_links][] = main-menu_contribute:uuid/node/01c2d591-ec25-4cb8-be7a-27a8f032d7a7
 features[menu_links][] = main-menu_country:uuid/node/db8aeb64-e064-43cb-aa55-0533e7328365
 features[menu_links][] = main-menu_data-management-plan:uuid/node/3fdba112-fa9f-46ec-8fb7-0e8efbc9d3ce
 features[menu_links][] = main-menu_delivery:uuid/node/426fc684-223e-4dd2-9e84-ecadb06f19a0

@@ -175,6 +175,26 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -40,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_contribute:uuid/node/01c2d591-ec25-4cb8-be7a-27a8f032d7a7.
+  $menu_links['main-menu_contribute:uuid/node/01c2d591-ec25-4cb8-be7a-27a8f032d7a7'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'uuid/node/01c2d591-ec25-4cb8-be7a-27a8f032d7a7',
+    'router_path' => 'uuid',
+    'link_title' => 'Contribute',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_contribute:uuid/node/01c2d591-ec25-4cb8-be7a-27a8f032d7a7',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+  );
   // Exported menu link: main-menu_country:uuid/node/db8aeb64-e064-43cb-aa55-0533e7328365.
   $menu_links['main-menu_country:uuid/node/db8aeb64-e064-43cb-aa55-0533e7328365'] = array(
     'menu_name' => 'main-menu',
@@ -968,6 +988,7 @@ function ailla_platform_feature_menu_default_menu_links() {
   t('Collections');
   t('Conditions');
   t('Contact');
+  t('Contribute');
   t('Countries');
   t('Country');
   t('Data Management Plan');
