@@ -106,7 +106,7 @@ function ailla_platform_feature_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Resource Media Files';
+  $handler->display->display_options['title'] = 'Media Files';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -152,7 +152,7 @@ function ailla_platform_feature_views_default_views() {
   $handler->display->display_options['fields']['fgs_label_s']['label'] = 'Object';
   $handler->display->display_options['fields']['fgs_label_s']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fgs_label_s']['link_to_object'] = 1;
-  /* Field: Broken/missing handler */
+  /* Field: Islandora Solr: mods_genre_lang_eng_authority_aillamediagenres_s */
   $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['id'] = 'mods_genre_lang_eng_authority_aillamediagenres_s';
   $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['table'] = 'islandora_solr';
   $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['field'] = 'mods_genre_lang_eng_authority_aillamediagenres_s';
@@ -174,10 +174,41 @@ if (is_object($object) && in_array(\'ailla:resourceCModel\', $object->models)) {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
-  $handler->display->display_options['block_description'] = 'Media Files';
+  $handler->display->display_options['enabled'] = FALSE;
+
+  /* Display: Presentation Files */
+  $handler = $view->new_display('block', 'Presentation Files', 'presentation_files');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Presentation Files';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Islandora Solr: Query Parser (Lucene) */
+  $handler->display->display_options['filters']['query_lucene']['id'] = 'query_lucene';
+  $handler->display->display_options['filters']['query_lucene']['table'] = 'islandora_solr';
+  $handler->display->display_options['filters']['query_lucene']['field'] = 'query_lucene';
+  $handler->display->display_options['filters']['query_lucene']['value'] = 'mods_note_archival_status_s:("P" OR "B")';
+
+  /* Display: Archival Files */
+  $handler = $view->new_display('block', 'Archival Files', 'archival_files');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Archival Files';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = 'This file has been moved to permanent storage. Please contact <a href="mailto:ailla@ailla.utexas.org">ailla@ailla.utexas.org</a> if you need access to this file.';
+  $handler->display->display_options['header']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Islandora Solr: mods_note_archival_status_s */
+  $handler->display->display_options['filters']['mods_note_archival_status_s']['id'] = 'mods_note_archival_status_s';
+  $handler->display->display_options['filters']['mods_note_archival_status_s']['table'] = 'islandora_solr';
+  $handler->display->display_options['filters']['mods_note_archival_status_s']['field'] = 'mods_note_archival_status_s';
+  $handler->display->display_options['filters']['mods_note_archival_status_s']['value'] = 'A';
   $translatables['resource_media_files'] = array(
     t('Master'),
-    t('Resource Media Files'),
+    t('Media Files'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -195,7 +226,9 @@ if (is_object($object) && in_array(\'ailla:resourceCModel\', $object->models)) {
     t('Genre'),
     t('All'),
     t('Block'),
-    t('Media Files'),
+    t('Presentation Files'),
+    t('Archival Files'),
+    t('This file has been moved to permanent storage. Please contact <a href="mailto:ailla@ailla.utexas.org">ailla@ailla.utexas.org</a> if you need access to this file.'),
   );
   $export['resource_media_files'] = $view;
 
