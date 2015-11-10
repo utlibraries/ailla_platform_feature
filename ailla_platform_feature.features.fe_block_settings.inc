@@ -26,7 +26,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -31,
+        'weight' => -30,
       ),
       'bartik' => array(
         'region' => '',
@@ -111,6 +111,39 @@ function ailla_platform_feature_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['system-main'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'main',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'ailla' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'ailla',
+        'weight' => -26,
+      ),
+      'bartik' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['system-main-menu'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -125,7 +158,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -32,
+        'weight' => -30,
       ),
       'bartik' => array(
         'region' => '',
@@ -257,7 +290,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -33,
+        'weight' => -30,
       ),
       'bartik' => array(
         'region' => 'sidebar_first',
@@ -276,6 +309,72 @@ function ailla_platform_feature_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['views-70943da76118936e79d962fe34561a19'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => '70943da76118936e79d962fe34561a19',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'ailla' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'ailla',
+        'weight' => -27,
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-bd9ea824e7009e1706dd2ff4d4b960a1'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'bd9ea824e7009e1706dd2ff4d4b960a1',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'ailla' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'ailla',
+        'weight' => -28,
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['views-frontpage_node_view-block'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -290,7 +389,7 @@ function ailla_platform_feature_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'ailla',
-        'weight' => -29,
+        'weight' => -30,
       ),
       'bartik' => array(
         'region' => '',
@@ -320,10 +419,10 @@ function ailla_platform_feature_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'ailla' => array(
-        'region' => 'content',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'ailla',
-        'weight' => -30,
+        'weight' => -28,
       ),
       'bartik' => array(
         'region' => '',
