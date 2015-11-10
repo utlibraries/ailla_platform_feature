@@ -19,7 +19,7 @@ function ailla_frontpage_slideshow_default_fe_block_settings() {
     'delta' => '16fe3259af1a7c8b43f9331adc24905a',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'ailla' => array(
@@ -42,7 +42,7 @@ function ailla_frontpage_slideshow_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   return $export;
