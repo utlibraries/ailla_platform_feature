@@ -89,6 +89,7 @@ features[user_permission][] = view fedora repository objects
 features[variable][] = islandora_basic_collection_display_backend
 features[variable][] = islandora_basic_collection_page_size
 features[variable][] = islandora_collection_metadata_display
+features[variable][] = islandora_video_make_archive
 features[variable][] = jquery_update_jquery_version
 features[variable][] = owlcarousel_add_class_active_owlcarousel_settings_default
 features[variable][] = owlcarousel_auto_height_owlcarousel_settings_default
