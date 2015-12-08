@@ -309,39 +309,6 @@ function ailla_platform_feature_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['views-70943da76118936e79d962fe34561a19'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => '70943da76118936e79d962fe34561a19',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'ailla' => array(
-        'region' => 'content',
-        'status' => 1,
-        'theme' => 'ailla',
-        'weight' => -27,
-      ),
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
   $export['views-bd9ea824e7009e1706dd2ff4d4b960a1'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -406,39 +373,6 @@ function ailla_platform_feature_default_fe_block_settings() {
     ),
     'title' => '',
     'visibility' => 1,
-  );
-
-  $export['views-resource_media_files-block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'resource_media_files-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'ailla' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'ailla',
-        'weight' => -28,
-      ),
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
   );
 
   return $export;

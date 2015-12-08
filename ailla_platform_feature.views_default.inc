@@ -152,12 +152,13 @@ function ailla_platform_feature_views_default_views() {
   $handler->display->display_options['fields']['fgs_label_s']['label'] = 'Object';
   $handler->display->display_options['fields']['fgs_label_s']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['fgs_label_s']['link_to_object'] = 1;
-  /* Field: Islandora Solr: mods_genre_lang_eng_authority_aillamediagenres_s */
-  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['id'] = 'mods_genre_lang_eng_authority_aillamediagenres_s';
-  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['table'] = 'islandora_solr';
-  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['field'] = 'mods_genre_lang_eng_authority_aillamediagenres_s';
-  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['label'] = 'Genre';
-  $handler->display->display_options['fields']['mods_genre_lang_eng_authority_aillamediagenres_s']['element_label_colon'] = FALSE;
+  /* Field: Islandora Solr: fedora_non_xml_mime_ms */
+  $handler->display->display_options['fields']['fedora_non_xml_mime_ms']['id'] = 'fedora_non_xml_mime_ms';
+  $handler->display->display_options['fields']['fedora_non_xml_mime_ms']['table'] = 'islandora_solr';
+  $handler->display->display_options['fields']['fedora_non_xml_mime_ms']['field'] = 'fedora_non_xml_mime_ms';
+  $handler->display->display_options['fields']['fedora_non_xml_mime_ms']['label'] = 'File Types';
+  $handler->display->display_options['fields']['fedora_non_xml_mime_ms']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['fedora_non_xml_mime_ms']['link_to_object'] = 0;
   /* Contextual filter: Islandora Solr: RELS_EXT_isMemberOfCollection_uri_s */
   $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['id'] = 'RELS_EXT_isMemberOfCollection_uri_s';
   $handler->display->display_options['arguments']['RELS_EXT_isMemberOfCollection_uri_s']['table'] = 'islandora_solr';
@@ -176,10 +177,10 @@ if (is_object($object) && in_array(\'ailla:resourceCModel\', $object->models)) {
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['enabled'] = FALSE;
 
-  /* Display: Presentation Files */
-  $handler = $view->new_display('block', 'Presentation Files', 'presentation_files');
+  /* Display: Media Files */
+  $handler = $view->new_display('block', 'Media Files', 'presentation_files');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Presentation Files';
+  $handler->display->display_options['title'] = 'Media Files';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Islandora Solr: Query Parser (Lucene) */
@@ -187,25 +188,6 @@ if (is_object($object) && in_array(\'ailla:resourceCModel\', $object->models)) {
   $handler->display->display_options['filters']['query_lucene']['table'] = 'islandora_solr';
   $handler->display->display_options['filters']['query_lucene']['field'] = 'query_lucene';
   $handler->display->display_options['filters']['query_lucene']['value'] = 'mods_note_archival_status_s:("P" OR "B")';
-
-  /* Display: Archival Files */
-  $handler = $view->new_display('block', 'Archival Files', 'archival_files');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Archival Files';
-  $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = 'This file has been moved to permanent storage. Please contact <a href="mailto:ailla@ailla.utexas.org">ailla@ailla.utexas.org</a> if you need access to this file.';
-  $handler->display->display_options['header']['area']['format'] = 'filtered_html';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Islandora Solr: mods_note_archival_status_s */
-  $handler->display->display_options['filters']['mods_note_archival_status_s']['id'] = 'mods_note_archival_status_s';
-  $handler->display->display_options['filters']['mods_note_archival_status_s']['table'] = 'islandora_solr';
-  $handler->display->display_options['filters']['mods_note_archival_status_s']['field'] = 'mods_note_archival_status_s';
-  $handler->display->display_options['filters']['mods_note_archival_status_s']['value'] = 'A';
   $translatables['resource_media_files'] = array(
     t('Master'),
     t('Media Files'),
@@ -223,12 +205,9 @@ if (is_object($object) && in_array(\'ailla:resourceCModel\', $object->models)) {
     t('next ›'),
     t('last »'),
     t('Object'),
-    t('Genre'),
+    t('File Types'),
     t('All'),
     t('Block'),
-    t('Presentation Files'),
-    t('Archival Files'),
-    t('This file has been moved to permanent storage. Please contact <a href="mailto:ailla@ailla.utexas.org">ailla@ailla.utexas.org</a> if you need access to this file.'),
   );
   $export['resource_media_files'] = $view;
 
