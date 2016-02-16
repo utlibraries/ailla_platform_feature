@@ -187,7 +187,7 @@ if (is_object($object) && in_array(\'ailla:resourceCModel\', $object->models)) {
   $handler->display->display_options['filters']['query_lucene']['id'] = 'query_lucene';
   $handler->display->display_options['filters']['query_lucene']['table'] = 'islandora_solr';
   $handler->display->display_options['filters']['query_lucene']['field'] = 'query_lucene';
-  $handler->display->display_options['filters']['query_lucene']['value'] = 'mods_note_archival_status_s:("P" OR "B")';
+  $handler->display->display_options['filters']['query_lucene']['value'] = 'mods_note_archival_status_s:("P" OR "B" OR "A")';
   $translatables['resource_media_files'] = array(
     t('Master'),
     t('Media Files'),
