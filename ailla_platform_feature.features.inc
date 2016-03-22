@@ -21,13 +21,6 @@ function ailla_platform_feature_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_islandora_solr_fields_features_default_fields().
- */
-function ailla_platform_feature_islandora_solr_fields_features_default_fields() {
-  return array();
-}
-
-/**
  * Implements hook_islandora_solr_metadata_configurations_default_fields().
  */
 function ailla_platform_feature_islandora_solr_metadata_configurations_default_fields() {
