@@ -258,6 +258,27 @@ function ailla_platform_feature_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_depositors:uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12',
   );
+  // Exported menu link: main-menu_depositor-info:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63.
+  $menu_links['main-menu_depositor-info:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63',
+    'router_path' => 'uuid',
+    'link_title' => 'Depositor Info',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_depositor-info:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_browse:islandora',
+  );
   // Exported menu link: main-menu_depositors:uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12.
   $menu_links['main-menu_depositors:uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12'] = array(
     'menu_name' => 'main-menu',
@@ -795,106 +816,6 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
   );
-  // Exported menu link: menu-browse_collections:islandora/object/ailla:collection_collection.
-  $menu_links['menu-browse_collections:islandora/object/ailla:collection_collection'] = array(
-    'menu_name' => 'menu-browse',
-    'link_path' => 'islandora/object/ailla:collection_collection',
-    'router_path' => 'islandora/object/%',
-    'link_title' => 'Collections',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-browse_collections:islandora/object/ailla:collection_collection',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-browse_countries:islandora/object/ailla:country_collection.
-  $menu_links['menu-browse_countries:islandora/object/ailla:country_collection'] = array(
-    'menu_name' => 'menu-browse',
-    'link_path' => 'islandora/object/ailla:country_collection',
-    'router_path' => 'islandora/object/%',
-    'link_title' => 'Countries',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-browse_countries:islandora/object/ailla:country_collection',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-browse_depositors:islandora/object/ailla:persons_collection.
-  $menu_links['menu-browse_depositors:islandora/object/ailla:persons_collection'] = array(
-    'menu_name' => 'menu-browse',
-    'link_path' => 'islandora/object/ailla:persons_collection',
-    'router_path' => 'islandora/object/%',
-    'link_title' => 'Depositors',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-browse_depositors:islandora/object/ailla:persons_collection',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 1,
-    'weight' => -46,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-browse_language-codes:ailla-language-codes.
-  $menu_links['menu-browse_language-codes:ailla-language-codes'] = array(
-    'menu_name' => 'menu-browse',
-    'link_path' => 'ailla-language-codes',
-    'router_path' => 'ailla-language-codes',
-    'link_title' => 'Language Codes',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-browse_language-codes:ailla-language-codes',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-browse_languages:islandora/object/ailla:language_collection.
-  $menu_links['menu-browse_languages:islandora/object/ailla:language_collection'] = array(
-    'menu_name' => 'menu-browse',
-    'link_path' => 'islandora/object/ailla:language_collection',
-    'router_path' => 'islandora/object/%',
-    'link_title' => 'Languages',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-browse_languages:islandora/object/ailla:language_collection',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
   // Exported menu link: menu-user_log-out:user/logout.
   $menu_links['menu-user_log-out:user/logout'] = array(
     'menu_name' => 'menu-user',
@@ -968,10 +889,10 @@ function ailla_platform_feature_menu_default_menu_links() {
   t('Conditions');
   t('Contact');
   t('Contribute');
-  t('Countries');
   t('Country');
   t('Data Management Plan');
   t('Delivery');
+  t('Depositor Info');
   t('Depositors');
   t('Disclaimers');
   t('Download');
@@ -983,7 +904,6 @@ function ailla_platform_feature_menu_default_menu_links() {
   t('Keyword Search');
   t('Langauge Code');
   t('Language');
-  t('Language Codes');
   t('Languages');
   t('License');
   t('Links');
