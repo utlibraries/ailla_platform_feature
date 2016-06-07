@@ -46,7 +46,6 @@ features[menu_links][] = main-menu_contribute:uuid/node/01c2d591-ec25-4cb8-be7a-
 features[menu_links][] = main-menu_country:uuid/node/db8aeb64-e064-43cb-aa55-0533e7328365
 features[menu_links][] = main-menu_data-management-plan:uuid/node/3fdba112-fa9f-46ec-8fb7-0e8efbc9d3ce
 features[menu_links][] = main-menu_delivery:uuid/node/426fc684-223e-4dd2-9e84-ecadb06f19a0
-features[menu_links][] = main-menu_depositor-info:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63
 features[menu_links][] = main-menu_depositors:uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12
 features[menu_links][] = main-menu_disclaimers:uuid/node/ea78941e-227c-418b-b491-ab30a2413f17
 features[menu_links][] = main-menu_download:uuid/node/22f5eb7f-66ec-40c9-b190-c477fd748210
