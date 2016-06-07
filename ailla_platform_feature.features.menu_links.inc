@@ -856,17 +856,17 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
   );
-  // Exported menu link: menu-browse_depositors:islandora/object/ailla:persons_collection.
-  $menu_links['menu-browse_depositors:islandora/object/ailla:persons_collection'] = array(
+  // Exported menu link: menu-browse_depositors:ailla_depositors.
+  $menu_links['menu-browse_depositors:ailla_depositors'] = array(
     'menu_name' => 'menu-browse',
-    'link_path' => 'islandora/object/ailla:persons_collection',
-    'router_path' => 'islandora/object/%',
+    'link_path' => 'ailla_depositors',
+    'router_path' => 'ailla_depositors',
     'link_title' => 'Depositors',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-browse_depositors:islandora/object/ailla:persons_collection',
+      'identifier' => 'menu-browse_depositors:ailla_depositors',
     ),
     'module' => 'menu',
     'hidden' => 0,
