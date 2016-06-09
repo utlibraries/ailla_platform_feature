@@ -11,6 +11,139 @@ function ailla_platform_feature_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'ailla_depositors';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'islandora_solr';
+  $view->human_name = 'AILLA Depositors';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'AILLA Depositors';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Islandora Solr: fgs_label_ms */
+  $handler->display->display_options['fields']['fgs_label_ms']['id'] = 'fgs_label_ms';
+  $handler->display->display_options['fields']['fgs_label_ms']['table'] = 'islandora_solr';
+  $handler->display->display_options['fields']['fgs_label_ms']['field'] = 'fgs_label_ms';
+  $handler->display->display_options['fields']['fgs_label_ms']['label'] = '';
+  $handler->display->display_options['fields']['fgs_label_ms']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['fgs_label_ms']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['fgs_label_ms']['link_to_object'] = 1;
+  /* Sort criterion: Islandora Solr: fgs_label_s */
+  $handler->display->display_options['sorts']['fgs_label_s']['id'] = 'fgs_label_s';
+  $handler->display->display_options['sorts']['fgs_label_s']['table'] = 'islandora_solr';
+  $handler->display->display_options['sorts']['fgs_label_s']['field'] = 'fgs_label_s';
+  /* Filter criterion: Islandora Solr: MADS_depositor status_ms */
+  // XXX: This section was manually added in; the space between 'depositor' and
+  // 'status' makes this view currently un-editable.
+  $handler->display->display_options['filters']['MADS_depositor status_ms']['id'] = 'MADS_depositor status_ms';
+  $handler->display->display_options['filters']['MADS_depositor status_ms']['table'] = 'islandora_solr';
+  $handler->display->display_options['filters']['MADS_depositor status_ms']['field'] = 'MADS_depositor status_ms';
+  $handler->display->display_options['filters']['MADS_depositor status_ms']['value'] = 'Y';
+  /* Filter criterion: Islandora Solr: RELS_EXT_isMemberOfCollection_uri_ms */
+  $handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_ms']['id'] = 'RELS_EXT_isMemberOfCollection_uri_ms';
+  $handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_ms']['table'] = 'islandora_solr';
+  $handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_ms']['field'] = 'RELS_EXT_isMemberOfCollection_uri_ms';
+  $handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_ms']['value'] = 'info:fedora/ailla:persons_collection';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'ailla-depositors';
+  $translatables['ailla_depositors'] = array(
+    t('Master'),
+    t('AILLA Depositors'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Page'),
+  );
+  $export['ailla_depositors'] = $view;
+
+  $view = new view();
+  $view->name = 'ailla_language_codes';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'islandora_solr';
+  $view->human_name = 'AILLA Language Codes';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'AILLA Language Codes';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Islandora Solr: aillaLanguage_aillaLangCode_et */
+  $handler->display->display_options['fields']['aillaLanguage_aillaLangCode_et']['id'] = 'aillaLanguage_aillaLangCode_et';
+  $handler->display->display_options['fields']['aillaLanguage_aillaLangCode_et']['table'] = 'islandora_solr';
+  $handler->display->display_options['fields']['aillaLanguage_aillaLangCode_et']['field'] = 'aillaLanguage_aillaLangCode_et';
+  $handler->display->display_options['fields']['aillaLanguage_aillaLangCode_et']['label'] = '';
+  $handler->display->display_options['fields']['aillaLanguage_aillaLangCode_et']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['aillaLanguage_aillaLangCode_et']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['aillaLanguage_aillaLangCode_et']['link_to_object'] = 1;
+  /* Sort criterion: Islandora Solr: fgs_label_s */
+  $handler->display->display_options['sorts']['fgs_label_s']['id'] = 'fgs_label_s';
+  $handler->display->display_options['sorts']['fgs_label_s']['table'] = 'islandora_solr';
+  $handler->display->display_options['sorts']['fgs_label_s']['field'] = 'fgs_label_s';
+  /* Filter criterion: Islandora Solr: RELS_EXT_isMemberOfCollection_uri_ms */
+  $handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_ms']['id'] = 'RELS_EXT_isMemberOfCollection_uri_ms';
+  $handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_ms']['table'] = 'islandora_solr';
+  $handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_ms']['field'] = 'RELS_EXT_isMemberOfCollection_uri_ms';
+  $handler->display->display_options['filters']['RELS_EXT_isMemberOfCollection_uri_ms']['value'] = 'info:fedora/ailla:language_collection';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'ailla-language-codes';
+  $translatables['ailla_language_codes'] = array(
+    t('Master'),
+    t('AILLA Language Codes'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Page'),
+  );
+  $export['ailla_language_codes'] = $view;
+
+  $view = new view();
   $view->name = 'frontpage_node_view';
   $view->description = '';
   $view->tag = 'default';

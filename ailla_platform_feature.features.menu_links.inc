@@ -258,17 +258,17 @@ function ailla_platform_feature_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_depositors:uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12',
   );
-  // Exported menu link: main-menu_depositor:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63.
-  $menu_links['main-menu_depositor:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63'] = array(
+  // Exported menu link: main-menu_depositor-info:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63.
+  $menu_links['main-menu_depositor-info:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63',
     'router_path' => 'uuid',
-    'link_title' => 'Depositor',
+    'link_title' => 'Depositor Info',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_depositor:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63',
+      'identifier' => 'main-menu_depositor-info:uuid/node/1004c368-5e62-45be-985c-4bad65ae3f63',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -816,17 +816,17 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
   );
-  // Exported menu link: menu-browse_collections:islandora.
-  $menu_links['menu-browse_collections:islandora'] = array(
+  // Exported menu link: menu-browse_collections:islandora/object/ailla:collection_collection.
+  $menu_links['menu-browse_collections:islandora/object/ailla:collection_collection'] = array(
     'menu_name' => 'menu-browse',
-    'link_path' => 'islandora',
-    'router_path' => 'islandora',
+    'link_path' => 'islandora/object/ailla:collection_collection',
+    'router_path' => 'islandora/object/%',
     'link_title' => 'Collections',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-browse_collections:islandora',
+      'identifier' => 'menu-browse_collections:islandora/object/ailla:collection_collection',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -836,17 +836,17 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: menu-browse_countries:uuid/node/15b230c6-fa96-4246-b251-f087d9455966.
-  $menu_links['menu-browse_countries:uuid/node/15b230c6-fa96-4246-b251-f087d9455966'] = array(
+  // Exported menu link: menu-browse_countries:islandora/object/ailla:country_collection.
+  $menu_links['menu-browse_countries:islandora/object/ailla:country_collection'] = array(
     'menu_name' => 'menu-browse',
-    'link_path' => 'uuid/node/15b230c6-fa96-4246-b251-f087d9455966',
-    'router_path' => 'uuid',
+    'link_path' => 'islandora/object/ailla:country_collection',
+    'router_path' => 'islandora/object/%',
     'link_title' => 'Countries',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-browse_countries:uuid/node/15b230c6-fa96-4246-b251-f087d9455966',
+      'identifier' => 'menu-browse_countries:islandora/object/ailla:country_collection',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -856,17 +856,17 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
   );
-  // Exported menu link: menu-browse_depositors:uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12.
-  $menu_links['menu-browse_depositors:uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12'] = array(
+  // Exported menu link: menu-browse_depositors:ailla_depositors.
+  $menu_links['menu-browse_depositors:ailla_depositors'] = array(
     'menu_name' => 'menu-browse',
-    'link_path' => 'uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12',
-    'router_path' => 'uuid',
+    'link_path' => 'ailla_depositors',
+    'router_path' => 'ailla_depositors',
     'link_title' => 'Depositors',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-browse_depositors:uuid/node/ff41d08e-a581-4370-b9d7-366e30f9cd12',
+      'identifier' => 'menu-browse_depositors:ailla_depositors',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -876,17 +876,17 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -46,
     'customized' => 1,
   );
-  // Exported menu link: menu-browse_language-codes:uuid/node/b96de16b-5c04-4ed8-b9a2-b2f3060d0334.
-  $menu_links['menu-browse_language-codes:uuid/node/b96de16b-5c04-4ed8-b9a2-b2f3060d0334'] = array(
+  // Exported menu link: menu-browse_language-codes:ailla-language-codes.
+  $menu_links['menu-browse_language-codes:ailla-language-codes'] = array(
     'menu_name' => 'menu-browse',
-    'link_path' => 'uuid/node/b96de16b-5c04-4ed8-b9a2-b2f3060d0334',
-    'router_path' => 'uuid',
+    'link_path' => 'ailla-language-codes',
+    'router_path' => 'ailla-language-codes',
     'link_title' => 'Language Codes',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-browse_language-codes:uuid/node/b96de16b-5c04-4ed8-b9a2-b2f3060d0334',
+      'identifier' => 'menu-browse_language-codes:ailla-language-codes',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -896,17 +896,17 @@ function ailla_platform_feature_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: menu-browse_languages:uuid/node/65a75655-f56c-4e73-a8c7-2b52050e8eb6.
-  $menu_links['menu-browse_languages:uuid/node/65a75655-f56c-4e73-a8c7-2b52050e8eb6'] = array(
+  // Exported menu link: menu-browse_languages:islandora/object/ailla:language_collection.
+  $menu_links['menu-browse_languages:islandora/object/ailla:language_collection'] = array(
     'menu_name' => 'menu-browse',
-    'link_path' => 'uuid/node/65a75655-f56c-4e73-a8c7-2b52050e8eb6',
-    'router_path' => 'uuid',
+    'link_path' => 'islandora/object/ailla:language_collection',
+    'router_path' => 'islandora/object/%',
     'link_title' => 'Languages',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-browse_languages:uuid/node/65a75655-f56c-4e73-a8c7-2b52050e8eb6',
+      'identifier' => 'menu-browse_languages:islandora/object/ailla:language_collection',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -993,7 +993,7 @@ function ailla_platform_feature_menu_default_menu_links() {
   t('Country');
   t('Data Management Plan');
   t('Delivery');
-  t('Depositor');
+  t('Depositor Info');
   t('Depositors');
   t('Disclaimers');
   t('Download');
